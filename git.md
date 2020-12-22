@@ -1,0 +1,24 @@
+1 git 
+ 源代码版本管理工具
+
+2 git工作流程
+ 
+    工作目录                       暂存区            git仓库 
+项目目录，将来用git做管理     临时存放修改的文件     存放项目的状态
+（比如白天上班写代码）       （晚上下班上传文件）   （存放第二天提取）
+
+3 git的使用（常用命令）
+  （1）*** 配置 ： 
+   [报告身份] 打开终端---输入：git config --global user.name huangbin768 [注册用户名]
+   [输入邮箱]         ---输入：git config --global user.Email 502793863@qq.com
+   [验证设置]          ---输入：git config --list 查看配置信息
+                        |--如无法查看配置信息，可通过[打开文件]的方式查找：
+                   （1）window系统：C盘---用户---git config文件（取消文件隐藏即可看到）
+                   （2）Mac系统：打开终端---“cd -”---open.gitconfig--弹出配置信息
+
+  （2）基本用法：
+       2-1  git init 初始化git仓库
+       2-2  git status 查看文件状态
+       2-3  git add 文件
+       2-4  git commit -m "提交信息"
+       2-5  git log 查看提交记录
